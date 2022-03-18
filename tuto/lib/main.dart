@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tuto/pages/chat.dart';
+import 'package:tuto/pages/chats.dart';
+import 'package:tuto/pages/e-book.dart';
+import 'package:tuto/pages/testPage.dart';
 import 'package:tuto/widgets/newsFeed.dart';
 import 'package:tuto/widgets/userCard.dart';
 
@@ -20,7 +24,7 @@ class MyApp extends StatelessWidget {
 
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: PageReader(),
     );
   }
 }
@@ -46,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           }, )*/
 
           ListView(
-            children: [
+            children: [ 
               UserCard( 
                 username: "Chourabi taher", 
                 email: "tchourabi@gmail.com", 
