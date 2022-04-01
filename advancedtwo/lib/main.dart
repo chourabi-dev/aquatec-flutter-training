@@ -1,5 +1,7 @@
 import 'package:advancedtwo/effectPage.dart';
+import 'package:advancedtwo/pages/api.dart';
 import 'package:advancedtwo/pages/homePage.dart';
+import 'package:advancedtwo/pages/picker.dart';
 import 'package:advancedtwo/widets/pageHeroOne.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
        
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PageHeroOne(),
+      home: ProfilePage(),
     );
   }
 }
