@@ -26,6 +26,8 @@ class _CreateNoteState extends State<CreateNote> {
       Database  db = await openDatabase('note_db.db'); 
        await db.execute(
       'CREATE TABLE IF NOT EXISTS notes (id INTEGER PRIMARY KEY, note TEXT)'); 
+
+      
        await db.transaction((txn) async {
         int id1 = await txn.rawInsert('INSERT INTO notes(note) VALUES("$val")');
         print('inserted1: $id1');

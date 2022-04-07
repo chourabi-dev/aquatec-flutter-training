@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820164100908",
+    "project_id": "aquatec-d4a4a",
+    "storage_bucket": "aquatec-d4a4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820164100908:android:19ca9330322f309ef26289",
+        "android_client_info": {
+          "package_name": "com.example.moreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820164100908-0h19rflqf90adctth134s50tb0l2shju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTMNfB2okyC2fTgDy1sa4F4iez5mk0MUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820164100908-0h19rflqf90adctth134s50tb0l2shju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
