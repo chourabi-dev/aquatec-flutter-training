@@ -1,6 +1,7 @@
  
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:moreapp/pages/check.dart';
 import 'package:moreapp/pages/signin.dart';
 
 
@@ -23,7 +24,7 @@ class CanGoAPP extends StatelessWidget {
         primarySwatch: Colors.blue, 
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SigninPage(),
+      home: CheckAuthStatus(),
     );
   }
 }
