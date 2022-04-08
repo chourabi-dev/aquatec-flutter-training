@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     Stream<QuerySnapshot> strem = _db.collection('news').snapshots();
-
+    
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -92,8 +92,18 @@ class _HomePageState extends State<HomePage> {
                    /* _db.collection('news').doc(docId).update({
                       'views': feed['views'].add({ uid; date })
                     })*/
+                    
 
-                    return Card(
+                    return GestureDetector(
+
+                        onDoubleTap: (){
+                          _db.collection('news').doc(docId).update({
+                            'likes': (feed['likes']+1)
+                          }).then((value) => null);
+                        },
+
+
+                      child: Card(
                       child: Container(
                         padding: EdgeInsets.all(15),
                       child: Column(
@@ -108,10 +118,12 @@ class _HomePageState extends State<HomePage> {
                           Container(
                             child: Text(feed['content']),
                           ),
-                          
-                          
+                          Container(
+                            child: Text('${feed['likes'].toString()} likes'),
+                          )
                         ],
                       ),
+                    ),
                     ),
                     );
                   },
