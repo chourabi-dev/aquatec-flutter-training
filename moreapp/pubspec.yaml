@@ -33,6 +33,9 @@ dependencies:
   cloud_firestore: "^0.16.0+1"
   firebase_messaging: "^8.0.0-dev.15"
   http:
+  wifi_iot: 
+  wifi:
+  in_app_notification:
 
 dev_dependencies:
   flutter_test:

@@ -2,7 +2,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:moreapp/pages/check.dart';
+import 'package:moreapp/pages/httpcall.dart';
 import 'package:moreapp/pages/signin.dart';
+import 'package:moreapp/pages/vitalia.dart';
 
 
 void main() async {
@@ -24,7 +26,7 @@ class CanGoAPP extends StatelessWidget {
         primarySwatch: Colors.blue, 
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CheckAuthStatus(),
+      home: HttpCallExmpl(),
     );
   }
 }
